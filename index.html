@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .form_control {
+text-align: left;
+margin-bottom: 20px;
+        }
+        form {
+            margin: 40px auto;
+            padding: 30px 30px;
+            max-width: 450px;
+            background-color: white;
+        }
+        select{
+            margin-bottom: 20px;
+        }
+        .form_control input,
+        .form_control select,
+        .form_control textarea{
+            display: block;
+            padding: 10px;
+            width: 90%;
+        }
+        .form_control input[type= "radio"],
+        .form_control input[type = "checkbox"]{
+            display: inline;
+            width: auto;
+        }
+        button{
+            display: block;
+            width: 95%;
+            padding: 10px 10px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Code crush survey form</h1>
+    <form style=" text-align: center;">
+        <fieldset>
+    <div class="form_control">
+        <label style="display: block ; margin-bottom: 5px;" for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your name"><br>
+        </div>
+        <div class="form_control">
+            <label style="display: block ; margin-bottom: 5px;" for="fname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
+        </div>
+        <div class="form_control">
+            <label style="display: block ; margin-bottom: 5px;" for="fname">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="Enter your email"><br><br>
+        </div>
+        <div class="form_control">
+            <label style="display: block ; margin-bottom: 5px;" for="fname">Which option best describes you:</label><br>
+        <select>
+            <option>Student</option>
+            <option >Intern</option>
+            <option>profetional</option>
+            <option>Other</option>
+        </select>
+        </div>
+
+        <div class="form_control">
+            <label style="display: block ; margin-bottom: 5px;" for="fname">Would you recommend a code crush to your friend?</label><br>
+        <input type="radio" name="choice"> Yes
+        <input type="radio" name="choice"> No
+        <input type="radio" name="choice"> May be
+        </div>
+        <div class="form_control">
+            <label style="display: block ; margin-bottom: 5px;" for="fname">Langauages and framework known:</label><br>
+        <input type="checkbox" name="select">C
+        <input type="checkbox" name="select">C++
+        <input type="checkbox" name="select">java
+        <input type="checkbox" name="select">python
+        </div>
+        <div class="form_control">
+            <label style="display: block ; margin-bottom: 5px;" for="fname">Any comments or suggestion:</label><br>
+        <textarea placeholder="enter your comment here" name="" id="" cols="30" rows="5"></textarea>
+        </div>
+        <button type="submit">submit</button>
+        
+    </div>
+    </fieldset>
+    </form>
+</body>
+</html>
